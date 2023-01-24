@@ -1,22 +1,15 @@
 
-# Java Core Complete Course
+# Yaroslav Tkachyk Personal branch ^_^
 
-> This is repository of Java Core Complete Course group.
+> my personal repository https://github.com/YaroslavTkachyk
 
-### List of branches
+### Kindly ask to
 
-- main - tempate for new branches;
-- dev - examles from trainings;
+- review code;
+- comment;
+- share your thoughts and experience;
 
-### Instruction. Create new branch
+### Follow me also at:
 
-- create forlder on disk;
-- open cmd and goto to new forlder;
-- clone repository **git clone https://github.com/vasyldmitrovich/JavaFullCourceEv.git**
-
-- change directory to **JavaCoreEv**;
-- check branch **git branch**
-- create new branch **git branch <NAME>** nameBranch
-- switch to new branch **git checkout <NAME>** nameBranch
-- open project in Idea/Eclipse;
-- write new code;
+- facebook https://www.facebook.com/yaroslav.tkachyk
+- instagram https://www.instagram.com/_y.tkachyk_cv.ua_/
