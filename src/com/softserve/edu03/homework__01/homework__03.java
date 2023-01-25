@@ -1,4 +1,4 @@
-package homework__01;
+package com.softserve.edu03.homework__01;
 
 
 public class homework__03 {
