@@ -28,7 +28,7 @@ public class Main {
         int call_1 = c1 * t1;
         int call_2 = c2 * t2;
         int call_3 = c3 * t3;
-        int all_call = (c1 + c2 + c3 ) * ( t1 + t2 + t3 );
+        int all_call = (c1 + c2 + c3 ) * ( t1 + t2 + t3 ); //int all_call = call_1 + call_2 + call_3
 
         System.out.println("For first call - " + call_1 + " cents" );
         System.out.println("For second call - " + call_2 + " cents");
