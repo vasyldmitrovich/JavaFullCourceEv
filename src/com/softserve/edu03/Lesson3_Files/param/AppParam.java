@@ -1,6 +1,4 @@
-package com.softserve.edu03.param;
-
-import java.util.Arrays;
+package com.softserve.edu03.Lesson3_Files.param;
 
 public class AppParam {
 
