@@ -1,4 +1,4 @@
-package com.softserve.edu03;
+package com.softserve.edu03.Lesson3_Files;
 
 public class Student { //extends Object {
     private String firstName; // = null

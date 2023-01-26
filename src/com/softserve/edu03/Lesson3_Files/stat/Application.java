@@ -1,4 +1,4 @@
-package com.softserve.edu03.stat;
+package com.softserve.edu03.Lesson3_Files.stat;
 
 public class Application {
     

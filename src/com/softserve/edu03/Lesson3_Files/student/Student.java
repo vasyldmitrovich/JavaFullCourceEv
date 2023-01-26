@@ -1,6 +1,4 @@
-package com.softserve.edu03.student;
-
-import java.util.Objects;
+package com.softserve.edu03.Lesson3_Files.student;
 
 public class Student { // extends Object {
     private static int count; //  = 0;
