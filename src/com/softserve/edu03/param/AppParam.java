@@ -29,7 +29,7 @@ public class AppParam {
              ) {
             System.out.println("bla = " + bla);
         }
-        //i = i + 2;
+//        i = i + 2;
         System.out.println("done work(...), i = " + i.toString());
     }
 

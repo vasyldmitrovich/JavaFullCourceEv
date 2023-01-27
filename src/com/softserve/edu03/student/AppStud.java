@@ -13,6 +13,9 @@ public class AppStud {
         st4.setId(12);
         st4.setName("Oksana");
         //
+        String nameStud = st4.getName();
+        System.out.println("Name Student = " + nameStud);
+        //
         System.out.println("st4 = " + st4);
         //
         System.out.println("Students count = " + Student.getCount());
@@ -22,6 +25,7 @@ public class AppStud {
         for (int i =0; i < 5; i++) {
             System.out.println("i = " + i + " myS= " + myS);
         }
+
         System.out.println("i = " + "myS= " + myS);;
     }
 }
