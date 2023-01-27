@@ -1,10 +1,13 @@
 package com.softserve.edu03.practical;
 
+import java.util.ArrayList;
+
 public class Employee {
     private String name;
     private int rate;
     private int hours;
     private static int employeeCount;
+    private static final ArrayList<Employee> allEmployees = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -42,6 +45,14 @@ public class Employee {
         return employeeCount;
     }
 
+    public static double getSalaryBudget(){
+        double salaryBudget = 0.0;
+        for (Employee person : allEmployees) {
+            salaryBudget = salaryBudget + person.totalIncome();
+        }
+        return salaryBudget;
+    }
+
     @Override
     public String toString() {
         return "Employee name is " + getName() + "!\n" +
@@ -56,6 +67,7 @@ public class Employee {
 
     public Employee() {
         employeeCount++;
+        allEmployees.add(this);
     }
 
     public Employee(String name, int rate, int hours) {
@@ -87,5 +99,4 @@ public class Employee {
     public double totalIncome() {
         return getSalary() + getBonuses();
     }
-
 }

@@ -22,9 +22,8 @@ public class Application {
         System.out.println(goalkeeper);
         System.out.println(topGoalScorer);
 
-        System.out.println("Total salary budget is "
-                + (CEO.totalIncome()+ coach.totalIncome()+
-                goalkeeper.totalIncome()+ topGoalScorer.totalIncome()) + "€");
+        System.out.println("Total salary budget is " + Employee.getSalaryBudget() + "€");
+
 
     }
 }
