@@ -1,9 +1,12 @@
 package com.softserve.edu03.ExampleTask;
 
+import java.util.ArrayList;
+
 public class Student {
     private static int studentCount;
     private String name;
     private double rating;
+    private static final ArrayList <Student> allStudents = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -21,59 +24,49 @@ public class Student {
         this.rating = rating;
     }
 
-    public Student() {
-        studentCount++;
-    }
-
     public static int getStudentCount() {
         return studentCount;
     }
 
+    public static double getTotalRating() {
+        double totalRating = 0.0;
+        for (Student student : allStudents) {
+            totalRating += student.getRating();
+        }
+        return totalRating;
+    }
+
+    public static double getAvrRating() {
+        return Student.getTotalRating()/allStudents.size();
+    }
+
+    public static boolean isBetterStudent(Student x) {
+        double rating;
+        for (Student student : allStudents) {
+            rating = student.getRating();
+            if (rating > x.getRating())
+                return false;
+        }
+        return true;
+    }
+
+    public Student() {
+        studentCount++;
+        allStudents.add(this);
+    }
+    public Student(String name) {
+        this();
+        this.name = name;
+    }
     public Student(String name, double rating) {
         this();
         this.name = name;
         this.rating = rating;
     }
 
-
-    /*private static double avrRating() {
-
-    }
-
-   /* private static boolean isBetterStudent(Student x) {
-        double[] ratingList = new double[getStudentCount()];
-        for (int j = 0; j < getStudentCount(); j++) {
-            ratingList[j] = new Student().getRating();
-        }
-        double max = ratingList[0];
-        for (int i = 0; i < getStudentCount(); i++) {
-            if (ratingList[i] >= max) {
-                max = ratingList[i];
-            }
-        } return x.getRating() >= max;
-    }*/
-
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", rating=" + rating +
-                '}';
-    }
-
-    public static void main(String[] args) {
-        Student firstStudent = new Student("Naruto Uzumaki", 4.5);
-        Student secondStudent = new Student("Sasuke Uchiha", 5.0);
-        Student thirdStudent = new Student("Sakura Haruno", 4.8);
-
-        System.out.println("Total amount of students is " + getStudentCount() + ":");
-        System.out.println(firstStudent);
-        System.out.println(secondStudent);
-        System.out.println(thirdStudent);
-
-
-
-
+        return "Student name is - " + getName() + "! Rating is - " + getRating();
     }
 }
 
