@@ -14,7 +14,7 @@ public class AppStud {
         System.out.println("st4 = " + st4);
         //
         System.out.println("Students count = " + Student.getCount());
-//        System.out.println("Students count = " + st4.getCount());
+        System.out.println("Students count = " + st4.getCount());
 
         String myS = "Home";
         for (int i =0; i < 5; i++) {
