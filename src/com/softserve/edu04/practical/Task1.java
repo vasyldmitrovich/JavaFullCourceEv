@@ -12,6 +12,7 @@ public class Task1 {
                     array[i] = scanner.nextInt();
                 } catch (InputMismatchException exception) {
                     System.out.println("You input not Integer. Program failed. Restart app and try again");
+                    break;
                 }
                 finally {
                     System.out.println("App read your number - " + array[i] + "\n");
