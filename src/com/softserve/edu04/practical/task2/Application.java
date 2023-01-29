@@ -1,4 +1,4 @@
-package com.softserve.edu04.practical.Task2;
+package com.softserve.edu04.practical.task2;
 
 public class Application {
 
