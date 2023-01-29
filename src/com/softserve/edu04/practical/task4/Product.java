@@ -56,14 +56,14 @@ public class Product {
 
     public static String mostExpensive () {
         double max = allProducts.get(0).getPrice();
-        String name = allProducts.get(0).getName();
+        String result = allProducts.get(0).getName();
         for (Product product : allProducts) {
             if (product.getPrice() > max) {
                 max = product.getPrice();
-                name = product.getName() + ". Our stock is - " + product.getQuantity() + " pieces.";
+                result = product.getName() + ". Our stock is - " + product.getQuantity() + " pieces.";
             }
         }
-        return name;
+        return result;
     }
     public static String mostQuantity () {
         int max = allProducts.get(0).getQuantity();
