@@ -1,4 +1,4 @@
-package com.softserve.edu04.practical;
+package com.softserve.edu04.practical.task1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
