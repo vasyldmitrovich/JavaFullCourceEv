@@ -60,7 +60,7 @@ public class Product {
         for (Product product : allProducts) {
             if (product.getPrice() > max) {
                 max = product.getPrice();
-                name = product.getName();
+                name = product.getName() + ". Our stock is - " + product.getQuantity() + " pieces.";
             }
         }
         return name;
