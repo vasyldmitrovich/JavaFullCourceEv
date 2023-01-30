@@ -19,7 +19,9 @@ public class Task1 {
                 if(thirdFloat >= -5 && thirdFloat <= 5) System.out.println("all three numbers are in the range of numbers [-5; 5]");
             } else System.out.println("one or more numbers are not in the range of numbers [-5; 5]");
         } else System.out.println("one or more numbers are not in the range of numbers [-5; 5]");
+
         System.out.println("------------------------------");
+
         System.out.println("Enter three integer numbers");
         System.out.print("Enter first: ");
         firstInt = scanner.nextInt();
@@ -38,8 +40,29 @@ public class Task1 {
         System.out.println("Max int = " + maxInt);
         System.out.println("Min int = " + minInt);
 
-
-
-
+        System.out.println("------------------------------");
+        System.out.print("enter error code (400-404): ");
+        String errorName = "HTTPER_" + scanner.nextInt();
+        HTTPError error = HTTPError.valueOf(errorName);
+        System.out.println(error.toString());
+    }
+}
+enum HTTPError{
+    HTTPER_400("Bad Request"), HTTPER_401("Unauthorized"), HTTPER_402("Payment Required"), HTTPER_403("Forbidden"), HTTPER_404("Not Found"),
+    ;
+    private String info;
+    HTTPError(String info) {
+        this.info = info;
+    }
+    public String getInfo() {
+        return info;
+    }
+    public void setInfo(String info) {
+        this.info = info;
+    }
+    @Override
+    public String toString() {
+        return "HTTPError " +
+                "info='" + info + '\'';
     }
 }
