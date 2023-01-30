@@ -21,13 +21,13 @@ public class Task1_1 {
 
     public static int oddQuantity(int x, int y, int z) {
         int quantity = 0;
-        if (x % 2 == 0) {
+        if (x % 2 == 1) {
             quantity++;
         }
-        if (y % 2 == 0) {
+        if (y % 2 == 1) {
             quantity++;
         }
-        if (z % 2 == 0) {
+        if (z % 2 == 1) {
             quantity++;
         }
         return quantity;

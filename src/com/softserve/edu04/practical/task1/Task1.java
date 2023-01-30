@@ -26,7 +26,7 @@ public class Task1 {
     public static int oddQuantity(int[] numbers) {
         int quantity = 0;
         for (int number : numbers) {
-            if (number % 2 == 0) {
+            if (number % 2 == 1) {
                 quantity++;
             }
         }
