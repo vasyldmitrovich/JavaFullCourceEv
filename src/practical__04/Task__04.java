@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Task__04 {
     public static void main(String[] args) {
-        Product milk = new Product("Milk", 24, 10);
-        Product apple = new Product("Apple", 5, 25);
-        Product banana = new Product("Banana", 7, 7);
-        Product tomato = new Product("Tomato", 30, 14);
+        Product milk = new Product("Milk", 67, 20);
+        Product apple = new Product("Apple", 25, 98);
+        Product banana = new Product("Banana", 32, 8);
+        Product tomato = new Product("Tomato", 52, 99);
         price(milk.getPrice(), apple.getPrice(), banana.getPrice(), tomato.getPrice(), milk.getName(), milk.getQuonity());
         price(apple.getPrice(), milk.getPrice(), banana.getPrice(), tomato.getPrice(), apple.getName(), apple.getQuonity());
         price(banana.getPrice(), milk.getPrice(), apple.getPrice(), tomato.getPrice(), banana.getName(), banana.getQuonity());
