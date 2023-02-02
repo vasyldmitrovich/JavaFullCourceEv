@@ -1,7 +1,5 @@
 package com.softserve.edu04.homework.task2;
 
-import com.softserve.edu04.practical.task4.Product;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -9,7 +7,7 @@ public class Dog {
         private String name;
         private Breed breed;
         private int age;
-        private static ArrayList<Dog> allDogs = new ArrayList<>();
+        private static final ArrayList<Dog> allDogs = new ArrayList<>();
 
         public String getName() {
                 return name;
@@ -70,7 +68,7 @@ public class Dog {
 
         public static String oldestDog () {
                 int max = allDogs.get(0).getAge();
-                String result = allDogs.get(0).getName();
+                String result = "";
                 for (Dog dog : allDogs) {
                         if (dog.getAge() > max) {
                                 max = dog.getAge();

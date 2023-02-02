@@ -129,3 +129,5 @@ workspace.xml
 # npm
 /node_modules/
 /**/node_modules/
+/src/lib/hamcrest-2.2.jar
+/src/lib/junit-4.13.2.jar
