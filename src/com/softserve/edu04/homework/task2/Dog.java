@@ -68,7 +68,7 @@ public class Dog {
 
         public static String oldestDog () {
                 int max = allDogs.get(0).getAge();
-                String result = "";
+                String result = allDogs.get(0).getName();
                 for (Dog dog : allDogs) {
                         if (dog.getAge() > max) {
                                 max = dog.getAge();
@@ -80,7 +80,7 @@ public class Dog {
 
         public static boolean isSameName () {
                 boolean result = true;
-                String name = "";
+                String name = allDogs.get(0).getName();
                 for (Dog dog : allDogs) {
                         if (!dog.getName().equalsIgnoreCase(name)) {
                                 name = dog.getName();
