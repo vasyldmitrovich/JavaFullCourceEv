@@ -22,9 +22,9 @@ public class Dog {
 
     public void maxAge(Dog dog_1, Dog dog_2){
         System.out.println("--Dog with the greatest age");
-        if (dog_1.age < this.age && dog_2.age < this.age)
+        if (dog_1.age <= this.age && dog_2.age <= this.age)
             System.out.println("Name: " + this.name + "\nBreed: " + this.breed);
-        else if (dog_1.age < dog_2.age && this.age < dog_2.age)
+        else if (dog_1.age <= dog_2.age && this.age <= dog_2.age)
             System.out.println("Name: " + dog_2.name + "\nBreed: " + dog_2.breed);
         else
             System.out.println("Name: " + dog_1.name + "\nBreed: " + dog_1.breed);
