@@ -8,11 +8,11 @@ public class Application {
         Employee.setAllNames();
         Employee.setAllDepartments();
         Employee.setAllSalaries();
-        System.out.println("\n This is the list of all employees in order of creation timing: ");
+        System.out.println("\nThis is the list of all employees in order of creation timing: ");
         Employee.print();
         String department = Employee.chooseDepartment();
         Employee.departmentSearch(department);
-        System.out.println("\n This is the list of all employees sorted by descending salary: ");
+        System.out.println("\nThis is the list of all employees sorted by descending salary: ");
         Employee.arrangeWorkers();
     }
 }

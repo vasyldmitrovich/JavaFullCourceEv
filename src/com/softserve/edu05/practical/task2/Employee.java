@@ -40,19 +40,12 @@ public class Employee {
         allEmployees.add(this);
     }
 
-   /* public Employee(String name, String department, int salary) {
-        this();
-        this.name = name;
-        this.department = department;
-        this.salary = salary;
-    }*/
-
     public static int amountOfEmployees() {
         System.out.println("Please enter the amount of employees you want to create: ");
         int result = 0;
         while (result <= 0 || result > 10) {
             try {
-                result = new Scanner (System.in).nextInt();
+                result = new Scanner(System.in).nextInt();
             } catch (InputMismatchException exception) {
                 System.out.println("You input not Integer. Please try again input correct data!");
             }
@@ -97,7 +90,7 @@ public class Employee {
             if (departmentID == 1) {
                 employee.setDepartmentNumber("Production");
             } else if (departmentID == 2) {
-                employee.setDepartmentNumber("Logistics");
+                employee.setDepartmentNumber("Logistic");
             } else {
                 employee.setDepartmentNumber("Accounting");
             }
@@ -113,7 +106,9 @@ public class Employee {
 
 
     public static void print() {
-        System.out.println(allEmployees.toString());
+        for (Employee allEmployee : allEmployees) {
+            System.out.println(allEmployee);
+        }
     }
 
     public static String chooseDepartment() {
@@ -137,17 +132,24 @@ public class Employee {
     }
 
     public static void departmentSearch(String department) {
-        for (int i = 0; i < allEmployees.size(); i++) {
-            if (allEmployees.get(i).getDepartment().equalsIgnoreCase(department)) {
-                System.out.println(allEmployees.get(i));
+        System.out.println("\nHere is list of employees who are working in " + department + " department:");
+        int count = 0;
+        for (Employee allEmployee : allEmployees) {
+            if (allEmployee.getDepartment().equals(department)) {
+                System.out.println(allEmployee);
+                ++count;
             }
         }
+        if (count == 0) {
+            System.out.println("Nobody is working in " + department + " department");
+        }
     }
-    public static void arrangeWorkers () {
+
+    public static void arrangeWorkers() {
         Employee temporary;
-        for (int i = 0; i < allEmployees.size()-1; i++) {
-            for (int j = i+1; j < allEmployees.size(); j++) {
-                if(allEmployees.get(i).getSalary() < allEmployees.get(j).getSalary()) {
+        for (int i = 0; i < allEmployees.size() - 1; i++) {
+            for (int j = i + 1; j < allEmployees.size(); j++) {
+                if (allEmployees.get(i).getSalary() < allEmployees.get(j).getSalary()) {
                     temporary = allEmployees.get(i);
                     allEmployees.set(i, allEmployees.get(j));
                     allEmployees.set(j, temporary);
@@ -171,7 +173,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\nName: " + name + ", Department: "
+        return "Name: " + name + ", Department: "
                 + department + ", Salary: " + salary + "$";
     }
 }
