@@ -1,4 +1,4 @@
-package com.softserve.edu02;
+package com.softserve.edu03.Home_work;
 
 import java.time.Year;
 import java.util.Date;
@@ -62,7 +62,7 @@ public class Person_hW03 {
     public String toString() {
         return "Person first name is - " + getFirstName() + "  Person last name is  - " + getLastName() +" "+ getAge ()+" years old";
     }
-    Scanner input = new Scanner(System.in);
+
 
 
 

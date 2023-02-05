@@ -1,4 +1,5 @@
-package com.softserve.edu02;
+
+package com.softserve.edu03.Practical_task;
 
 public class Employee {
   private static float totalSum;
@@ -42,5 +43,4 @@ public class Employee {
   public String toString() {
     return "Employee name is - " + getName() + "! Worked for hours - " + getHours()+" Salary " + (getRate() * getHours());
   }
-
 }

@@ -4,7 +4,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
     public class Home_Work1  {
-        public static void home_Work1 (String[] args) {
+        public static void main(String[] args) {
             //    Console Application project in Java
                 Scanner console = new Scanner(System.in);
                 System.out.println("Write number 'a'");

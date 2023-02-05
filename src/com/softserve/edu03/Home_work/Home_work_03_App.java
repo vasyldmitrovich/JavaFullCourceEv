@@ -1,7 +1,6 @@
-package com.softserve.edu02;
+package com.softserve.edu03.Home_work;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Home_work_03_App {
     public static void main(String[] args) {
