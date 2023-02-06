@@ -2,6 +2,8 @@ package com.softserve.edu06.practical.task1;
 
 public class Sedan extends Car {
 
+    /*Order must be, first fields after constructor and after that methods, in class Truck the same*/
+
     @Override
     public void run() {
         System.out.println(model + " Start engine, push accelerator up to " + maxSpeed + "km/h");

@@ -1,6 +1,7 @@
 package com.softserve.edu06.practical.task2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class Main {
@@ -17,9 +18,16 @@ public class Main {
         ArrayList <Line> lines = new ArrayList<>();
         Line line1 = new Line(new Point(6,6), new Point(7,7));
         Line line2 = new ColorLine(new Point(8,8), new Point(9,9), "red");
+        /*You can avoid next two line if write ColorLine color = new ColorLine(new Point(),new Point(), "blue");*/
         Point v = new Point();
         Point w = new Point();
         ColorLine color = new ColorLine(v,w, "blue");
+
+//        ColorLine color1 = new ColorLine(new Point(10,10),new Point(20,20), "blue");
+        /*And after that use construction like that*/
+//        color1.getA().setX(150);
+//        System.out.println("--- Change x for first point = " + color1);
+
         v.setX(10);
         v.setY(10);
         w.setX(11);

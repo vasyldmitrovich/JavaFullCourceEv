@@ -13,6 +13,7 @@ public class NonFlyingBird extends Bird {
         System.out.println("But I cannot fly!");
     }
 
+    /*If you do not change logic in that method, then why you write that method???*/
     @Override
     public String toString() {
         return super.toString();

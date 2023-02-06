@@ -18,6 +18,16 @@ public class Main {
         forthBird.setFeathers(true);
         forthBird.setLayEggs(true);
         forthBird.setType("Chicken");
+        //-----------
+        Bird fifthBird = new Chicken();
+        fifthBird.setFeathers(true);
+        fifthBird.setLayEggs(true);
+        fifthBird.setType("Chicken");
+
+        System.out.println("\nIf there is no getType in the chicken class\n--- Variable fifthBird when i call getType() is: " + fifthBird.getType() + " " +
+                "\tTHIS IS NOT CORRECT\nIf I do cast type I will have a mismatch\n");
+        //-----------
+
         birds [3] = forthBird;
         for (Bird bird : birds) {
             System.out.print(bird);

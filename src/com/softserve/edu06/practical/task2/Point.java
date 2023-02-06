@@ -1,6 +1,7 @@
 package com.softserve.edu06.practical.task2;
 
 public class Point {
+    /*Add tab before fields, and order change, first must be constructor after get set and methods*/
 private int x;
 private int y;
 
