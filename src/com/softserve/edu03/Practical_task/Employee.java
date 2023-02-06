@@ -2,6 +2,7 @@
 package com.softserve.edu03.Practical_task;
 
 public class Employee {
+  /*Please make reformat code, because that code is not readable */
   private static float totalSum;
   private String name;
   private float rate;

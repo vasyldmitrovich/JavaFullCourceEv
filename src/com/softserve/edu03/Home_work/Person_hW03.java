@@ -4,6 +4,7 @@ import java.time.Year;
 import java.util.Date;
 import java.util.Scanner;
 
+/*Make reformat code and rename class, reed Java Code Convention*/
 public class Person_hW03 {
   private String firstName;
   private String lastName;

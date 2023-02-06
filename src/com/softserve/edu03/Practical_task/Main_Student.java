@@ -5,6 +5,7 @@ import com.softserve.edu03.Student;
 public class Main_Student {
     public static void main(String[] args) {
 
+        /*Fix spaces, reed Java Code Convention*/
                     Student st0 = new Student("Petro");
                     Student st1 = new Student("Oleg");
                     Student st2 = new Student("Vita");
@@ -17,6 +18,7 @@ public class Main_Student {
                     System.out.println(st2);
                     System.out.println("\nTotal rating is " + Student.getTotalRating());
                     System.out.println("Average rating of all students is " + Student.getAvrRating() + "\n");
+                    /*Change 'why' to 'who'*/
                     System.out.println (" Why is the best student?");
                     System.out.println(st0.getName() + " - "+ Student.betterStudent(st0));
                     System.out.println(st1.getName() + " - " + Student.betterStudent(st1));

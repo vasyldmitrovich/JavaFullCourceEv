@@ -7,7 +7,10 @@ public class Student {
     private static int studentCount;
     private String name;
     private int rating;
+    /*That arr must be in another class not in that class*/
     private static final ArrayList<Student> allStudents = new ArrayList<>();
+
+    /*First constructors after get set methods and after that all another methods*/
 
     public String getName() {
         return name;

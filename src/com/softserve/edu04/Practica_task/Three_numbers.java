@@ -2,6 +2,8 @@ package com.softserve.edu04.Practica_task;
 
 import java.util.Scanner;
 
+/*Do not correct naming class, reed Java Code Convention
+* PLEASE RENAME IN ALL FILES NAME*/
 public class Three_numbers {
     public static void main(String[] args) {
         Scanner numbers = new Scanner(System.in);
