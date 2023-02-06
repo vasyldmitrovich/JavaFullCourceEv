@@ -1,10 +1,12 @@
 package com.softserve.edu05.Practical_tasks.Task_2;
 
 public class Employee {
+    /*Security bug, fields is not private*/
     String name;
     int department_number;
     int salary;
 
+    /*Do not have constructor without parameters*/
     public Employee(String name, int department_number, int salary){
         this.name = name;
         this.department_number = department_number;

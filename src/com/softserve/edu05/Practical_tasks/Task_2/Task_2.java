@@ -13,7 +13,7 @@ public class Task_2 {
         Employee emp_5 = new Employee("Igor", 7777, 2800);
 
         Employee[] emps = {emp_1, emp_2, emp_3, emp_4, emp_5};
-
+        /*Create a separate method that accepts a string and prints a message, and then returns the data entered by the user*/
         System.out.print("Enter the department number: ");
         int dep_num = scan.nextInt();
         boolean same_dep = false;
