@@ -8,6 +8,9 @@ public class Task__04 {
         Product apple = new Product("Apple", 25, 98);
         Product banana = new Product("Banana", 32, 8);
         Product tomato = new Product("Tomato", 52, 99);
+        /*If you want to found max use cycles and in that cycle send array Product, in cycle use method getPrice() and compare two object
+        * if one of the object has bigger price set that object to variable for example result. And in the ent return that variable
+        * After when you will have product with the biggest price print info about that product*/
         price(milk.getPrice(), apple.getPrice(), banana.getPrice(), tomato.getPrice(), milk.getName(), milk.getQuonity());
         price(apple.getPrice(), milk.getPrice(), banana.getPrice(), tomato.getPrice(), apple.getName(), apple.getQuonity());
         price(banana.getPrice(), milk.getPrice(), apple.getPrice(), tomato.getPrice(), banana.getName(), banana.getQuonity());

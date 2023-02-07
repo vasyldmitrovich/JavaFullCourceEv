@@ -6,6 +6,7 @@ public class task__01 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //First task
+        /*rename variable to lowercase*/
         int A, B, C;
         System.out.println("Enter A nubmer: ");
         A = scan.nextInt();
@@ -17,6 +18,7 @@ public class task__01 {
 
     }
 
+    /*parameters int A should have named in lowercase*/
     static void oddNubmers(int A, int B, int C) {
         if (A % 2 == 0) {
             System.out.println("A number is odd.");

@@ -7,6 +7,7 @@ public class task__02 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of the day of the week: ");
         int a = scan.nextInt();
+        /*put that condition to some method, and there call that method*/
         switch (a) {
             case 1:
                 System.out.print("Monday");

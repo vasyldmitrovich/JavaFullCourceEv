@@ -19,7 +19,7 @@ public class task__02 {
         int sum = 0;
         int r = 5;
         int product = 1;
-        int x = 0;
+        int x;// = 0;
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             System.out.println("[" + arr[i] + "]");
