@@ -7,6 +7,7 @@ public class Main {
                 new Sedan("Mazda", 230, 2012),
                 new Truck("Opel", 215, 2011)};
         for (Car temp: cars) {
+            /*Do not need toString() because that method will work automatically*/
             System.out.println(temp.toString());
         }
     }

@@ -9,6 +9,7 @@ public class Task1 {
         }
         int sumPositive = 0;
         int biggest = array[0];
+        /*Try to give shorter names to variables */
         int amountOfPositiveNumbers = 0;
         int amountOfNegativeNumbers = 0;
         for (int temp:array) {

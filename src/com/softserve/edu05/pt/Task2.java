@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
+        /*Move next 6 line to some method, and there call that method, do the same with Scanner*/
         Employee first = new Employee("Will", 3, 5000);
         Employee second = new Employee("Bruce", 4, 4000);
         Employee third = new Employee("Tom", 2, 4500);

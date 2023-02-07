@@ -2,6 +2,7 @@ package com.softserve.edu06.pt.task2;
 
 public class Main {
     public static void main(String[] args) {
+        /*All is good respect*/
         Line[] lines = {new Line(2, 3, 4, 5),
                         new ColourLine(3, 4, 5, 6, "red"),
                         new Line(4, 3, 2, 4),
