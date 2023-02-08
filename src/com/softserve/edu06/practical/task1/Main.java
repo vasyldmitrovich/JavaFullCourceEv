@@ -2,6 +2,8 @@ package com.softserve.edu06.practical.task1;
 
 public class Main {
     public static void main(String[] args) {
+        /*Unique method and that method return arr Cars, and in main method set that in variable
+        * for example Car[] cars = myMethod()*/
         Car [] cars = new Car[4];
         cars[0] = new Truck("Volvo", 180,2019);
         cars[1] = new Sedan("Tesla", 320, 2021);

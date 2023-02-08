@@ -1,6 +1,7 @@
 package com.softserve.edu06.practical.task2;
 
 public class Line {
+    /*Why fields do not private?*/
     Point a = new Point();
     Point b = new Point();
 

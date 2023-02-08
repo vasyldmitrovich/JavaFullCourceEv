@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Task1_1 {
     public static void main(String[] args) {
         int[] calendar = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        /*Create a separate method that accepts a string and prints a message, and then returns the data entered by the user*/
         System.out.println("Enter number of the month to receive quantity of days in chosen month: ");
         int number = 0;
         while (number <= 0 || number > 12) {

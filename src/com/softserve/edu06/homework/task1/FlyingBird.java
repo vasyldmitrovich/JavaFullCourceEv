@@ -9,6 +9,7 @@ public class FlyingBird extends Bird{
         super(feathers, layEggs);
     }
 
+    /*If you do not change logic in that method, then why you write that method???*/
     @Override
     public String toString() {
         return super.toString();

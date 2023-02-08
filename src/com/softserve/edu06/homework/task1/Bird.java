@@ -44,6 +44,7 @@ public abstract class Bird {
         return "Bird{" +
                 "feathers=" + feathers +
                 ", layEggs=" + layEggs +
+                ", type is=" + type +
                 '}';
     }
 }

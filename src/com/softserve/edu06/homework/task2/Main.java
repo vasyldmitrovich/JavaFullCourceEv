@@ -2,6 +2,7 @@ package com.softserve.edu06.homework.task2;
 
 public class Main {
     public static void main(String[] args) {
+        /*Do not write all in main method, divide logic in a couple methods and call methods which return needed data*/
         Employee employee1 = new Employee("Yaroslav",31,54321.0);
         Employee employee2 = new Developer(); // розширення типу
         employee2.setName("John");
