@@ -7,10 +7,9 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Task2 {
-    private static String answer() {
-        Scanner scanner = new Scanner(System.in);
-            return scanner.nextLine();
-
+    static Scanner scanner = new Scanner(System.in);
+    private static String answer1() {
+        return scanner.nextLine();
     }
 
     private static String answer2() {
@@ -27,14 +26,19 @@ public class Task2 {
 
 
     public static void main(String[] args) {
+        run();
+    }
+
+    public static void run() {
         String question1 = "Hello! How are you?";
         System.out.println(question1);
-        String answer = answer();
+        String answer1 = answer1();
         String question2 = "And how is your family?";
         System.out.println(question2);
         String answer2 = answer2();
-        System.out.println("You said you're " + answer + "!");
+        System.out.println("You said you're " + answer1 + "!");
         System.out.println("You said yours family is " + answer2 + "!");
+        scanner.close();
     }
 }
 
