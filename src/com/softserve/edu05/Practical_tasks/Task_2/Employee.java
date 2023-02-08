@@ -2,30 +2,49 @@ package com.softserve.edu05.Practical_tasks.Task_2;
 
 public class Employee {
     /*Security bug, fields is not private*/
-    String name;
-    int department_number;
-    int salary;
+    private String name;
+    private int departmentNumber;
+    private int salary;
 
     /*Do not have constructor without parameters*/
-    public Employee(String name, int department_number, int salary){
+
+    public Employee() {
+    }
+
+    public Employee(String name, int departmentNumber, int salary){
         this.name = name;
-        this.department_number = department_number;
+        this.departmentNumber = departmentNumber;
         this.salary = salary;
     }
 
-    public void print(){
-        System.out.println("\nName: " + name + "\nDepartment number: " + department_number  + "\nSalary: " + salary );
-    }
-
-    public int getDepartment_number() {
-        return department_number;
-    }
+    // Getters and setters
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getDepartmentNumber() {
+        return departmentNumber;
+    }
+
+    public void setDepartmentNumber(int departmentNumber) {
+        this.departmentNumber = departmentNumber;
+    }
+
     public int getSalary() {
         return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "\nName: " + name + "\nDepartment number: " + departmentNumber + "\nSalary: " + salary;
     }
 }

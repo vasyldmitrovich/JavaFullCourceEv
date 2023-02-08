@@ -6,17 +6,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        float[] float_nums = new float[3];
+        float[] floatNums = new float[3];
 
-        for(int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             System.out.print("Enter the fractional number: ");
-            float_nums[i] = scan.nextFloat();
+            floatNums[i] = scan.nextFloat();
         }
 
         boolean numsInRenge = true;
 
-        for(int i = 0; i < 3; i++){
-            if (float_nums[i] < -5 || 5 < float_nums[i]) {
+        for (int i = 0; i < 3; i++) {
+            if (floatNums[i] < -5 || 5 < floatNums[i]) {
                 numsInRenge = false;
                 break;
             }
@@ -31,7 +31,7 @@ public class Main {
 
         int[] nums = new int[3];
 
-        for(int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             System.out.print("Enter the number: ");
             nums[i] = scan.nextInt();
         }
@@ -39,10 +39,10 @@ public class Main {
         int min = nums[0];
         int max = nums[0];
 
-        for(int i = 1; i < 3; i++){
-            if(nums[i] < min)
+        for (int i = 1; i < 3; i++) {
+            if (nums[i] < min)
                 min = nums[i];
-            if(nums[i] > max)
+            if (nums[i] > max)
                 max = nums[i];
         }
 
@@ -56,7 +56,7 @@ public class Main {
 
         HTTPError httpError;
 
-        switch(error){
+        switch (error) {
             case 400 -> httpError = HTTPError.BAD_REQUEST;
             case 401 -> httpError = HTTPError.UNAUTHORIZED;
             case 402 -> httpError = HTTPError.PAYMENT_REQUIRED;

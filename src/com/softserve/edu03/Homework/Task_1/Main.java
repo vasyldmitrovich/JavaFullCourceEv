@@ -2,26 +2,26 @@ package com.softserve.edu03.Homework.Task_1;
 
 public class Main {
     public static void main(String[] args) {
-        Person person_1 = new Person();
-        person_1.output();
-        System.out.println("Age: " + person_1.getAge());
+        Person person1 = new Person();
+        System.out.println(person1.toString());
+        System.out.println("Age: " + person1.getAge());
 
-        Person person_2 = new Person("Ivan", "Poroh");
-        person_2.setBirthYear(2008);
-        person_2.output();
+        Person person2 = new Person("Ivan", "Poroh");
+        person2.setBirthYear(2008);
+        System.out.println(person2.toString());
 
-        Person person_3 = new Person("Dima", "Hyduma");
-        person_3.changeName("Igor");
-        person_3.setBirthYear(1996);
-        person_3.output();
+        Person person3 = new Person("Dima", "Hyduma");
+        person3.changeName("Igor");
+        person3.setBirthYear(1996);
+        System.out.println(person3.toString());
 
-        Person person_4 = new Person();
-        person_4.changeName("Stas", "Cvas");
-        person_4.output();
+        Person person4 = new Person();
+        person4.changeName("Stas", "Cvas");
+        System.out.println(person4.toString());
 
-        Person person_5 = new Person("Nameless", "Admin");
-        person_5.setBirthYear(1988);
-        person_5.output();
-        System.out.println("Age: " + person_5.getAge());
+        Person person5 = new Person("Nameless", "Admin");
+        person5.setBirthYear(1988);
+        System.out.println(person5.toString());
+        System.out.println("Age: " + person5.getAge());
     }
 }

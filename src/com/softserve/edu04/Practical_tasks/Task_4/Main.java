@@ -7,7 +7,7 @@ public class Main {
         Product cheese = new Product("cheese", 5.5f, 20);
         Product porridge = new Product("yogurt", 2.8f, 10);
 
-        yogurt.mostExpensiveItem(meat, cheese, porridge);
-        yogurt.biggestQuantity(meat, cheese, porridge);
+        yogurt.getMostExpensiveItem(meat, cheese, porridge);
+        yogurt.getBiggestQuantity(meat, cheese, porridge);
     }
 }

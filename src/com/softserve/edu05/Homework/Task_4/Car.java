@@ -1,25 +1,47 @@
 package com.softserve.edu05.Homework.Task_4;
 
 public class Car {
-    String type;
-    int year;
-    float engine_capacity;
+    private String type;
+    private int year;
+    private float engineCapacity;
 
-    public Car(String type, int year, float engine_capacity){
-        this.type = type;
-        this.year = year;
-        this.engine_capacity = engine_capacity;
+    public Car() {
     }
 
-    public void print(){
-        System.out.println("\nModel: " + type + "\nYear: " + year  + "\nEngine capacity: " + engine_capacity);
+    public Car(String type, int year, float engineCapacity) {
+        this.type = type;
+        this.year = year;
+        this.engineCapacity = engineCapacity;
+    }
+
+    // Getters and Setters
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getYear() {
         return year;
     }
 
-    public String getType() {
-        return type;
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public float getEngineCapacity() {
+        return engineCapacity;
+    }
+
+    public void setEngineCapacity(float engineCapacity) {
+        this.engineCapacity = engineCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return "\nModel: " + type + "\nYear: " + year + "\nEngine capacity: " + engineCapacity;
     }
 }

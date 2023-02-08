@@ -6,10 +6,11 @@ public class Main {
         Dog doberman = new Dog("Jack", "Doberman", 7);
         Dog bichon = new Dog("Daisy", "Bichon", 2);
 
-        if (shepherd.equalsName(doberman) || shepherd.equalsName(bichon) || doberman.equalsName(bichon))
+        if (shepherd.equalsName(doberman) || shepherd.equalsName(bichon) || doberman.equalsName(bichon)) {
             System.out.println("Some dogs have the same names\n");
-        else
+        } else {
             System.out.println("Dogs have different names\n");
+        }
 
         shepherd.maxAge(doberman, bichon);
     }

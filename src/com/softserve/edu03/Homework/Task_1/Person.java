@@ -20,14 +20,39 @@ public class Person {
         birthYear = 2000;
     }
 
+    // Getters and setters
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
     // Main methods
 
-    public int getAge(){
+    public int getAge() {
         int thisYear = Year.now().getValue();
         return thisYear - birthYear;
     }
 
-    public void input(){
+    public void input() {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("\nEnter a name: ");
@@ -40,30 +65,17 @@ public class Person {
         birthYear = scan.nextInt();
     }
 
-    public void output(){
-        System.out.println("\nFirst name: " + firstName + "\nLast name: " + lastName + "\nThe birthday year: " + birthYear);
+    @Override
+    public String toString() {
+        return "\nFirst name: " + firstName + "\nLast name: " + lastName + "\nThe birthday year: " + birthYear;
     }
 
-    public void changeName(String firstName){
+    public void changeName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void changeName(String firstName, String lastName){
+    public void changeName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    // Setters
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setBirthYear(int birthYear) {
-        this.birthYear = birthYear;
     }
 }
