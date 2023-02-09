@@ -1,6 +1,7 @@
 package com.softserve.edu06.practcalTasks.task1;
 
 public abstract class Car {
+    /*Set access modifier protected if in inheritance you will call that variable, or use private*/
     protected String model;
     protected float maxSpeed;
     protected float speed = 0;
