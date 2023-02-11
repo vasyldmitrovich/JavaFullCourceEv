@@ -10,9 +10,10 @@ public class task__03 {
         int x[] = new int[a];
         for (int i = 0; i < x.length; i++) {
             System.out.println("Enter number of array:  ");
-            int b = scan.nextInt();
+            /*That line do not needed
+            int b = scan.nextInt();*/
 
-            x[i] = b;
+            x[i] = scan.nextInt();
         }
         //Task №1
         int min = x[0];

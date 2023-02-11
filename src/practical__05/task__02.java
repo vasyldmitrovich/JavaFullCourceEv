@@ -6,11 +6,13 @@ import java.util.Scanner;
 public class task__02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        /*Create method that return array Employee, and there call that method and set data from method to variable*/
         Employee em1 = new Employee("Volodymyr", 2000);
         Employee em2 = new Employee("Ivan", 4500);
         Employee em3 = new Employee("Petr", 5200);
         Employee em4 = new Employee("John", 3000);
         Employee em5 = new Employee("Pavlo", 3900);
+        /*All is good, but create method, that method send message to user and return int*/
         System.out.println("Enter the number of department for first employee: ");
         int a = scan.nextInt();
         em1.setDepartmentNumber(a);
