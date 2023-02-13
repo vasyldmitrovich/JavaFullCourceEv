@@ -1,24 +1,23 @@
 package com.softserve.edu01;
 
-import java.io.PrintStream;
 import java.util.Scanner;
 
-    public class Home_Work1  {
-        public static void main(String[] args) {
-            //    Console Application project in Java
-                Scanner console = new Scanner(System.in);
-                System.out.println("Write number 'a'");
-                int a = console.nextInt();
-                System.out.println("Write number 'b'");
-                int b = console.nextInt();
-                System.out.println("a+b="+(a+b));
-                System.out.println("a-b="+(a-b));
-                System.out.println("a*b="+(a*b));
-                System.out.println("a/b="+(a/b));
+public class HomeWork1 {
+    public static void main(String[] args) {
+        //    Console Application project in Java
+        Scanner console = new Scanner(System.in);
+        System.out.println("Write number 'a'");
+        int a = console.nextInt();
+        System.out.println("Write number 'b'");
+        int b = console.nextInt();
+        System.out.println("a+b=" + (a + b));
+        System.out.println("a-b=" + (a - b));
+        System.out.println("a*b=" + (a * b));
+        System.out.println("a/b=" + (a / b));
 //    Output question “How are you?“
-            /*
+        /*
 
-             */
+         */
       /*  Scanner console = new Scanner(System.in);
         System.out.println ("Enter the radius");
         int r = console.nextInt();
@@ -60,6 +59,6 @@ import java.util.Scanner;
 
 */
 
-        }
-
     }
+
+}
