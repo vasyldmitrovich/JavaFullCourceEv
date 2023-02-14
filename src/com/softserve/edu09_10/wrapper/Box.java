@@ -1,4 +1,4 @@
-package com.softserve.edu08.wrapper;
+package com.softserve.edu09_10.wrapper;
 
 public class Box {
 	private Object obj;

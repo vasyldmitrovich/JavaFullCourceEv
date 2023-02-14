@@ -1,4 +1,4 @@
-package com.softserve.edu08.wrapper;
+package com.softserve.edu09_10.wrapper;
 
 public class ApplBox {
 
@@ -37,6 +37,7 @@ public class ApplBox {
 
 
 		//Code with Generics
+/*
 
 		BoxGen<String> box = new BoxGen<>();
 //		box.set(123); // Compile Error.
@@ -57,6 +58,7 @@ public class ApplBox {
 		//
 		write(box.get());
 		write(box2.get());
+*/
 
 
 		//Code with BoxGen<T extends Serializable>

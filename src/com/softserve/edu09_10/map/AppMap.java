@@ -1,4 +1,4 @@
-package com.softserve.edu09.map;
+package com.softserve.edu09_10.map;
 
 import java.util.HashMap;
 import java.util.Iterator;
