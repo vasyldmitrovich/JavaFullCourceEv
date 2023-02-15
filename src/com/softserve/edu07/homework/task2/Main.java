@@ -2,15 +2,15 @@ package com.softserve.edu07.homework.task2;
 
 public class Main {
     public static void main(String[] args) {
-        Passengers liner = new Liner(20, 5);
-        Passengers boat = new Boat(7, 15);
-        Passengers plane = new Plane(70, 2500);
-        Passengers helicopter = new Helicopter(8, 3000, 1500);
-        Passengers bus = new Bus(40, "8A");
-        Passengers motorcycle = new Motorcycle(2, 200);
-        Passengers car = new Car(4, "Audi");
-
-        Passengers passengers[] = {liner, boat, plane, helicopter, bus, motorcycle, car};
+        Passengers passengers[] = {
+                new Liner(20, 5),
+                new Boat(7, 15),
+                new Plane(70, 2500),
+                new Helicopter(8, 3000, 1500),
+                new Bus(40, "8A"),
+                new Motorcycle(2, 200),
+                new Car(4, "Audi")
+        };
 
         for (Passengers passenger : passengers) {
             if (passenger instanceof WaterVehicle) {
