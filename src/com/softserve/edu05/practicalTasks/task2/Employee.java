@@ -7,7 +7,6 @@ public class Employee {
     private int salary;
 
     /*Do not have constructor without parameters*/
-
     public Employee() {
     }
 
@@ -18,7 +17,6 @@ public class Employee {
     }
 
     // Getters and setters
-
     public String getName() {
         return name;
     }
@@ -45,6 +43,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\nName: " + name + "\nDepartment number: " + departmentNumber + "\nSalary: " + salary;
+        return "\nName: " + name + "\nDepartment number: "
+                + departmentNumber + "\nSalary: " + salary;
     }
 }
