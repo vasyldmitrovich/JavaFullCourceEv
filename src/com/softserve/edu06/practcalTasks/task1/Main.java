@@ -14,13 +14,13 @@ public class Main {
         }
 
         System.out.println("Let's test our " + audi.getModel());
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++) {
             audi.run();
         }
         audi.stop();
 
         System.out.println("\nLet's test our " + scania.getModel());
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             scania.run();
         }
         scania.stop();

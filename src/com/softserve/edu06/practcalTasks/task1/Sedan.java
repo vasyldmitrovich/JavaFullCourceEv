@@ -25,18 +25,18 @@ public class Sedan extends Car {
 
     public String toString() {
         return "Price of this sedan on OLX: " + priceOnOLX + "$" + "\nModel: "
-                + model + "\nMax speed: " + maxSpeed + " km/h"
-                + "\nYear Of manufacture: " + yearOfManufacture + "\n";
+                + getModel() + "\nMax speed: " + getMaxSpeed() + " km/h"
+                + "\nYear of manufacture: " + getYearOfManufacture() + "\n";
     }
 
     @Override
     public void run() {
-        if(speed == 0){
-            speed += maxSpeed / 2;
-            System.out.println("Speed of this car is " + speed + " km/h");
-        } else if (speed < maxSpeed){
-            speed += maxSpeed / 4;
-            System.out.println("Speed of this car is " + speed + " km/h");
+        if(getSpeed() == 0){
+            setSpeed(getSpeed() + getMaxSpeed() / 2);
+            System.out.println("Speed of this car is " + getSpeed() + " km/h");
+        } else if (getSpeed() < getMaxSpeed()){
+            setSpeed(getSpeed() + getMaxSpeed() / 4);
+            System.out.println("Speed of this car is " + getSpeed() + " km/h");
         } else{
             System.out.println("This is already the max speed");
         }
@@ -44,7 +44,7 @@ public class Sedan extends Car {
 
     @Override
     public void stop() {
-        speed = 0;
+        setSpeed(0);
         System.out.println("\nThe sedan was stopped");
     }
 }

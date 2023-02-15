@@ -26,27 +26,27 @@ public class Truck extends Car {
     @Override
     public String toString() {
         if(isLoaded) {
-            return "Truck is loaded" + "\nModel: " + model + "\nMax speed: "
-                    + maxSpeed + " km/h" + "\nYear Of manufacture: " + yearOfManufacture
+            return "Truck is loaded" + "\nModel: " + getModel() + "\nMax speed: "
+                    + getMaxSpeed() + " km/h" + "\nYear Of manufacture: " + getYearOfManufacture()
                     + "\n";
         } else {
-            return "Truck is not loaded" + "\nModel: " + model + "\nMax speed: "
-                    + maxSpeed + " km/h" + "\nYear Of manufacture: " + yearOfManufacture
+            return "Truck is not loaded" + "\nModel: " + getModel() + "\nMax speed: "
+                    + getMaxSpeed() + " km/h" + "\nYear Of manufacture: " + getYearOfManufacture()
                     + "\n";
         }
     }
 
     @Override
     public void run() {
-        if(speed == 0){
-            speed += maxSpeed / 2;
-            System.out.println("Speed of this truck is " + speed + " km/h");
-        } else if ((speed < maxSpeed) && (!isLoaded)){
-            speed += maxSpeed / 4;
-            System.out.println("Speed of this truck is " + speed + " km/h");
-        } else if ((speed < maxSpeed) && (isLoaded)){
-            speed += maxSpeed / 8;
-            System.out.println("Speed of this truck is " + speed + " km/h");
+        if(getSpeed() == 0){
+            setSpeed(getSpeed() + getMaxSpeed() / 2);
+            System.out.println("Speed of this truck is " + getSpeed() + " km/h");
+        } else if ((getSpeed() < getMaxSpeed()) && (!isLoaded)){
+            setSpeed(getSpeed() + getMaxSpeed() / 4);
+            System.out.println("Speed of this truck is " + getSpeed() + " km/h");
+        } else if ((getSpeed() < getMaxSpeed()) && (isLoaded)){
+            setSpeed(getSpeed() + getMaxSpeed() / 8);
+            System.out.println("Speed of this truck is " + getSpeed() + " km/h");
         } else {
             System.out.println("This is already the max speed");
         }
@@ -54,7 +54,7 @@ public class Truck extends Car {
 
     @Override
     public void stop() {
-        speed = 0;
+        setSpeed(0);
         System.out.println("\nThe truck was stopped");
     }
 }

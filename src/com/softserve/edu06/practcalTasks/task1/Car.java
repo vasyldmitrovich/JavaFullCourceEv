@@ -2,10 +2,10 @@ package com.softserve.edu06.practcalTasks.task1;
 
 public abstract class Car {
     /*Set access modifier protected if in inheritance you will call that variable, or use private*/
-    protected String model;
-    protected float maxSpeed;
-    protected float speed = 0;
-    protected int yearOfManufacture;
+    private String model;
+    private float maxSpeed;
+    private float speed = 0;
+    private int yearOfManufacture;
 
     public Car() {
     }
@@ -38,6 +38,14 @@ public abstract class Car {
 
     public void setYearOfManufacture(int yearOfManufacture) {
         this.yearOfManufacture = yearOfManufacture;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(float speed) {
+        this.speed = speed;
     }
 
     public abstract void run();
