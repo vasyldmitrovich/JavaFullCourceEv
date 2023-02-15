@@ -9,6 +9,7 @@ public class Main {
 
         Bird birds[] = {eagle, swallow, penguin, chicken};
 
+        /*I recommend you use a loop foreach*/
         for (int i = 0; i < birds.length; i++){
             System.out.println(birds[i].toString());
             birds[i].fly();
