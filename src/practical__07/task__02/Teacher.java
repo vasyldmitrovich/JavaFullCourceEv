@@ -1,4 +1,4 @@
-package parcrical07.task__02;
+package practical__07.task__02;
 
 public class Teacher extends Staff {
 

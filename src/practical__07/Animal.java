@@ -1,4 +1,4 @@
-package parcrical07;
+package practical__07;
 
 interface Animal {
 

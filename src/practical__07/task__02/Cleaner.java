@@ -1,20 +1,25 @@
-package parcrical07.task__02;
+package practical__07.task__02;
 
-public class Student extends Person {
+public class Cleaner extends Staff {
 
-    private final String TYPE_PERSON = "Student";
+    private final String TYPE_PERSON = "Cleaner";
 
-    public Student() {
+    public Cleaner() {
         System.out.println("You created " + this.TYPE_PERSON + " type of person.");
     }
 
-    public Student(String name) {
+    public Cleaner(String name) {
         super(name);
         System.out.println("You created " + this.TYPE_PERSON + " type of person.");
     }
 
     public String getTYPE_PERSON() {
         return TYPE_PERSON;
+    }
+
+    @Override
+    public void salary() {
+        System.out.println("My salary as a " + this.TYPE_PERSON + " is 2000$ for month.");
     }
 
     @Override
