@@ -4,9 +4,10 @@ import java.util.*;
 
 public class ApplList {
     public static void main(String[] args) {
-/*
 
 		//Without copy
+
+/*
 		String[] arrStr = { "222", "1", "1111", "10" };
 		//System.out.println("arrStr = " + arrStr); // toString() from Object;
 		System.out.println("arrStr = " + Arrays.toString(arrStr));
@@ -25,7 +26,6 @@ public class ApplList {
 //		lstStr.sort((a,b)->a.compareTo(b));
 		System.out.println("Sorted lstStr = " + lstStr);
 */
-
 
 		//With copy
 /*
@@ -50,6 +50,7 @@ public class ApplList {
 
 
 		//List Student
+/*
 
 		List<Student> lstStr = new ArrayList<>();
         //List lstStr = new ArrayList(); // List<Object>
@@ -74,6 +75,7 @@ public class ApplList {
          Student s1 = (Student) lstStr.get(1);
 		System.out.println("Student s1 = " + s1);
 //        String s1 = (String) lstStr.get(1);
+*/
 
 
         //Iterator
