@@ -1,5 +1,6 @@
 package homework__07;
 
+/*Name of the class must start from Upper Case letter */
 public class main {
     public static void main(String[] args) {
 
@@ -17,6 +18,7 @@ public class main {
         };
 
         for (Employee a : arr) {
+            /*Use there if instanceof */
             ((Payment) a).print();
             System.out.println("");
         }
