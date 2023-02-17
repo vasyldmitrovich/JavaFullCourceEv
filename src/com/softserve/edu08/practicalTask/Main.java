@@ -5,7 +5,7 @@ public class Main {
         Department department = new Department("Nova Poshta");
         Department.Address departmentAddress = department.new Address("Lviv", "Dmytra Danylyshyn", 6);
         department.setAddress(departmentAddress);
-
+        //Good
         Department copyOfDepartment = (Department) department.clone();
         copyOfDepartment.setAddress("Lviv", "Naukova", 30);
 
