@@ -1,5 +1,4 @@
 package com.softserve.edu04.homeWork;
-
 public class Dog {
     private String dogsName;
     private String breed;
@@ -22,6 +21,7 @@ public class Dog {
         this.breed = breed;
         this.age = age;
     }
+
     public String dogsName() {
         return dogsName;
     }

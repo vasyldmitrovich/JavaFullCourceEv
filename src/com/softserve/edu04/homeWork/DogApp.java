@@ -5,12 +5,12 @@ public class DogApp {
         enum breed {
             German_Shepherd, Smooth_Fox_Terrier, Dachshund
         }
-        Dog dog0 = new Dog("Rex", "German Shepherd", 14);
+        Dog dog0 = new Dog("Rex", "German Shepherd", 4);
         Dog dog1 = new Dog("Jessi", "Smooth Fox Terrier", 7);
         Dog dog2 = new Dog("Sausage", "Dachshund", 10);
 
         String[] arr1 = {dog0.dogsName(), dog1.dogsName(), dog2.dogsName()};
-        if (dog0.dogsName() == dog1.dogsName() || dog0.dogsName() == dog2.dogsName()) {
+        if (dog0.dogsName().equals(dog1.dogsName()) || dog0.dogsName().equals(dog2.dogsName())) {
             System.out.println("A dog with that name already exists");
         } else {
             System.out.println("There is no dog with that name");
