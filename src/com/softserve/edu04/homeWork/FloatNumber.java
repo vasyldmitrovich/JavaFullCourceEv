@@ -6,8 +6,6 @@ public class FloatNumber<floatNumber> {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        float max = 5;
-        float min = -5;
         float floatNumber = sc.nextFloat();
 
         if ((floatNumber >= -5) && (floatNumber <= 5)) {
