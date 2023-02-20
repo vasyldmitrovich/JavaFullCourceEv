@@ -28,7 +28,7 @@ public class Application {
             addToList((Person) list.get(2).clone());
         }
         catch (CloneNotSupportedException exception) {
-            System.out.println("Houston we got a problem");
+            System.out.println("Houston we got a problem");// Fanny ;-) xixixi)))))
             exception.printStackTrace();
         }
         printList();
