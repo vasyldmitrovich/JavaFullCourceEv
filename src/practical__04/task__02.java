@@ -4,10 +4,14 @@ import java.util.Scanner;
 
 public class task__02 {
     public static void main(String[] args) {
+        week();
+
+    }
+
+    public static void week() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of the day of the week: ");
         int a = scan.nextInt();
-        /*put that condition to some method, and there call that method*/
         switch (a) {
             case 1:
                 System.out.print("Monday");

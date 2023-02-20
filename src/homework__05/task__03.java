@@ -10,8 +10,6 @@ public class task__03 {
         int x[] = new int[a];
         for (int i = 0; i < x.length; i++) {
             System.out.println("Enter number of array:  ");
-            /*That line do not needed
-            int b = scan.nextInt();*/
 
             x[i] = scan.nextInt();
         }
