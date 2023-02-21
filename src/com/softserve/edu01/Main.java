@@ -1,8 +1,5 @@
 package com.softserve.edu01;
 
-import java.io.PrintStream;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         //    Console Application project in Java
@@ -19,7 +16,7 @@ public class Main {
 //    Output question “How are you?“
         /*
 
-       */
+         */
       /*  Scanner console = new Scanner(System.in);
         System.out.println ("Enter the radius");
         int r = console.nextInt();
@@ -63,4 +60,4 @@ public class Main {
 
     }
 
-    }
+}

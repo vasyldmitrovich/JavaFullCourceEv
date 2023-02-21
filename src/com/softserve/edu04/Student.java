@@ -1,5 +1,4 @@
-
-package com.softserve.edu03;
+package com.softserve.edu04;
 
 import java.util.ArrayList;
 
@@ -12,7 +11,8 @@ public class Student {
 
     /*First constructors after get set methods and after that all another methods*/
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
@@ -34,6 +34,7 @@ public class Student {
 
     public static int getTotalRating() {
         int totalRating = 0;
+
         for (Student student : allStudents) {
             totalRating += student.getRating();
         }
@@ -41,11 +42,12 @@ public class Student {
     }
 
     public static int getAvrRating() {
-        return Student.getTotalRating()/allStudents.size();
+        return Student.getTotalRating() / allStudents.size();
     }
 
     public static boolean betterStudent(Student x) {
         int rating;
+
         for (Student student : allStudents) {
             rating = student.getRating();
             if (rating > x.getRating())
@@ -58,10 +60,12 @@ public class Student {
         studentCount++;
         allStudents.add(this);
     }
+
     public Student(String name) {
         this();
         this.name = name;
     }
+
     public Student(String name, int rating) {
         this();
         this.name = name;
