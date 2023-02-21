@@ -1,6 +1,4 @@
-package com.softserve.edu04.practicaTask;
-
-import java.util.Locale;
+package com.softserve.edu04.practicalTask;
 
 public class EnPol {
     public int setCase;

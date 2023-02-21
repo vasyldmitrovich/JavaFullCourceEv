@@ -38,7 +38,9 @@ public class Country {
                     "Georgia", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Kazakhstan", "Latvia", "Liechtenstein",
                     "Lithuania", "Luxembourg", "Malta", "Moldova", "Monaco", "Montenegro", "Netherlands", "North Macedonia", "Norway",
                     "Poland", "Portugal", "Romania", "russia", "San Marino", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland",
-                     "Turkey", "Ukraine", "United Kingdom", "Vatican": continent = Continent.EUROPE; break;
+                    "Turkey", "Ukraine", "United Kingdom", "Vatican":
+                continent = Continent.EUROPE;
+                break;
 
             case "China", "Japan", " India", "moscov", " Iran", "South Korea", "Indonesia", "Saudi Arabia",
                     "Turkey ", "Taiwan":
@@ -49,8 +51,10 @@ public class Country {
                 continent = Continent.OCEANIA;
                 break;
 
-            default: continent=Continent.NOT_COUNTRY;
-        };
+            default:
+                continent = Continent.NOT_COUNTRY;
+        }
+        ;
         System.out.print(continent);
     }
 }

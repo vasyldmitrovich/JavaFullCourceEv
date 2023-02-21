@@ -1,4 +1,4 @@
-package com.softserve.edu04.practicaTask;
+package com.softserve.edu04.practicalTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,5 +1,5 @@
 
-package com.softserve.edu04.practicaTask;
+package com.softserve.edu04.practicalTask;
 
 import java.util.Scanner;
 
