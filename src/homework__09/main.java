@@ -70,7 +70,7 @@ public class main {
 
             if (myCollection.get(i) < 0 && count == 0) {
                 myCollection.add(i, b);
-                count++;
+                break;
             }
 
         }
@@ -105,8 +105,8 @@ public class main {
 
         Collections.reverse(list2);
         //task 5
-
         int evenNumber = myCollection.get(0);
+
         int indxEven = 0;
 
         for (int i = 0; i < myCollection.size(); i++) {
