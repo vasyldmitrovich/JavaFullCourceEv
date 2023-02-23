@@ -1,4 +1,4 @@
-package com.softserve.edu03.ExampleTask;
+package com.softserve.edu03.exampleTask;
 
 import java.util.ArrayList;
 

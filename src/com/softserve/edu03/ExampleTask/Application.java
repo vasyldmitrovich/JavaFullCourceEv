@@ -1,4 +1,4 @@
-package com.softserve.edu03.ExampleTask;
+package com.softserve.edu03.exampleTask;
 
 public class Application {
     public static void main(String[] args) {
