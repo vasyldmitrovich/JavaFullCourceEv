@@ -1,6 +1,5 @@
 package com.softserve.edu10.homework.task2;
 
-import com.softserve.edu10.homework.task3.Student;
 
 import java.util.*;
 
@@ -14,7 +13,7 @@ public class Main {
         checkSameKey(personMap);
 
         deleteFirstName(personMap, "Orest");
-        System.out.println("\n--After removing Orest\n");
+        System.out.println("\n--After removing Orest");
         inputMap(personMap);
     }
 
@@ -40,7 +39,7 @@ public class Main {
     }
 
     public static void checkSameKey(Map<String, String> map){
-        Collection<String> names = map.values();
+        Collection<String> names = new LinkedList<>(map.values());
         Set<String> namesSet = new HashSet<>(names);
 
         for(String s : namesSet) {
@@ -57,29 +56,14 @@ public class Main {
     }
 
     public static void deleteFirstName(Map<String, String> map, String name) {
-        for(Map.Entry<String, String> entry : map.entrySet()){
-            if(entry.getValue().equals(name)){
-                map.remove(entry.getKey());
+        Set <String> keys = new HashSet<>();
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            if (entry.getValue().equals(name)) {
+                keys.add(entry.getKey());
             }
         }
-
-        // The second way, have ConcurrentModificationException as well
-
-//        Iterator<String> iterator = map.values().iterator();
-//
-//        String nextName;
-//
-//        while (iterator.hasNext()){
-//            nextName = iterator.next();
-//
-//            if(nextName.equals(name)){
-//                for(String key : map.keySet()){
-//                    if(map.get(key).equals(name)){
-//                        System.out.println("\n" + key);
-//                        map.remove(key);
-//                    }
-//                }
-//            }
-//        }
+        for (String key : keys) {
+            map.remove(key);
+        }
     }
 }
