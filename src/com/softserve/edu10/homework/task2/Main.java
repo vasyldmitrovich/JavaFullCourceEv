@@ -48,7 +48,7 @@ public class Main {
 
         Set<String> repeatedNames = new HashSet<>(names);
 
-        System.out.println("\n--Repeated names");
+        System.out.println("\n--Repeated names\n");
 
         for(String name : repeatedNames){
             System.out.println(name + " is " + (Collections.frequency(names, name) + 1) + " times in map");
