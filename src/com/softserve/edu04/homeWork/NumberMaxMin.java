@@ -18,7 +18,7 @@ public class NumberMaxMin {
             i++;
         }
             int [] arr1 = {firstNumber,secondNumber, thirdNumber };
-            int min = 999999999;
+            int min = Integer.MAX_VALUE;
             int j = 0;
             while (j < arr.length) {
                 if (arr1[j] < min)  {
