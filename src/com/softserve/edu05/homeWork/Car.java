@@ -40,16 +40,10 @@ public class Car {
 
     public void setYear() {
     }
+
     @Override
     public String toString() {
         return "String type - " + getType() + "  year is  - " + getYear() + " " + getEngineCapacity();
     }
 
-    /*
-    ublic class MarketEmployee {
-    private final String fieldsName;
-    private int departmentNumber;
-    private int salary;
-
-    */
 }
