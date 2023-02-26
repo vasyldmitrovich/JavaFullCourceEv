@@ -4,62 +4,33 @@ import java.util.Scanner;
 
 public class NumberMonth {
     public static void main(String[] args) {
-        System.out.println("Enter the number of month  ");
+
         int[] monthDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-
         Scanner br = new Scanner(System.in);
-        String input = br.nextLine();
+        System.out.println("Enter the number of month  ");
+        int days;
         int numberMonth = br.nextInt();
-     /*   String result;
-
-        switch (input.toLowerCase()) {
-            case "1":
-                result = "January!";
-                break;
-            case "2":
-                result = "February!";
-            case "3":
-                result = "March!";
-                break;
-            case "4":
-                result = "April!";
-                break;
-            case "5":
-                result = "May!";
-                break;
-            case "6":
-                result = "June!";
-                break;
-            case "7":
-                result = "July!";
-                break;
-            case "8":
-                result = "August!";
-                break;
-            case "9":
-                result = "September!";
-                break;
-            case "10":
-                result = "October!";
-                break;
-            case "11":
-                result = "November!";
-                break;
-            case "12":
-                result = "December!";
-                break;
-
-            default:
-                result = "Enter a number from 1 to 12!";
-        }
+        String result = switch (numberMonth) {
+            case 1 -> "January!";
+            case 2 -> "February!";
+            case 3 -> "March!";
+            case 4 -> "April!";
+            case 5 -> "May!";
+            case 6 -> "June!";
+            case 7 -> "July!";
+            case 8 -> "August!";
+            case 9 -> "September!";
+            case 10 -> "October!";
+            case 11 -> "November!";
+            case 12 -> "December!";
+            default -> "Enter a number from 1 to 12!";
+        };
         System.out.println(result);
-*/
-
-        for (int monthDay : monthDays) {
-            if (numberMonth >0) {
-                var b = numberMonth == monthDay;
-                System.out.println(monthDay);
+        for (int i = 0; i < monthDays.length - 1; i++) {
+            if (numberMonth <= monthDays.length) {
+                System.out.println(monthDays[numberMonth - 1]);
+                break;
             }
         }
     }
