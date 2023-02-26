@@ -1,7 +1,11 @@
 package com.softserve.edu05.homeWork;
 
 public class Car {
-    private String type;
+    public String type;
+
+    public Car() {
+
+    }
 
     public String getType() {
         return type;
@@ -11,7 +15,7 @@ public class Car {
         this.type = type;
     }
 
-    private int year;
+    public int year;
 
     public double getEngineCapacity() {
         return engineCapacity;
@@ -22,7 +26,6 @@ public class Car {
     }
 
     private double engineCapacity;
-
 
     public Car(String type, int year, double engineCapacity) {
         this.type = type;
@@ -40,7 +43,6 @@ public class Car {
 
     public void setYear() {
     }
-
     @Override
     public String toString() {
         return "String type - " + getType() + "  year is  - " + getYear() + " " + getEngineCapacity();

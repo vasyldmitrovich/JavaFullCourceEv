@@ -9,7 +9,6 @@ public class NumberMonth {
 
         Scanner br = new Scanner(System.in);
         System.out.println("Enter the number of month  ");
-        int days;
         int numberMonth = br.nextInt();
         String result = switch (numberMonth) {
             case 1 -> "January!";
