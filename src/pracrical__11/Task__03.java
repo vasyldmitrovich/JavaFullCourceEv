@@ -15,7 +15,7 @@ public class Task__03 {
 
         String userName = scan.nextLine();
 
-        Pattern pa = Pattern.compile("[a-zA-Z0-9_]+");
+        Pattern pa = Pattern.compile("[a-zA-z0-9_]+");
 
         Matcher ma = pa.matcher(userName);
 
