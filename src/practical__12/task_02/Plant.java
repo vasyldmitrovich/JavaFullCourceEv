@@ -8,21 +8,13 @@ public class Plant {
 
     private Type type;
 
-    enum Color {
-        YELLOW, WHITE, BLUE
-    }
 
-    enum Type {
-        FOREST, MARSHY, STEPPE
-    }
-
-    public Plant(int size, String yellow, Type marshy) {
-    }
-
-    public Plant(int size, Color color, Type type) {
+    public Plant(int size, String color, String type) throws ColorExeption, TypeException {
         this.size = size;
-        this.color = color;
-        this.type = type;
+        Color colorising = getColoring(color);
+        Type typing = getTyping(type);
+        this.color = colorising;
+        this.type = typing;
 
     }
 
@@ -50,22 +42,37 @@ public class Plant {
         this.type = type;
     }
 
-    public Color colorEnum(String color) throws ColorExeption {
-        switch (color.toLowerCase()) {
 
-            case "blue":
-                return this.color = Color.BLUE;
-            case "yellow":
-                return this.color = Color.YELLOW;
-            case "white":
-                return this.color = Color.WHITE;
+    private Type getTyping(String a) throws TypeException {
+        switch (a.toLowerCase()) {
+            case "forest":
+                return Type.FOREST;
+            case "marshy":
+                return Type.MARSHY;
+            case "steppe":
+                return Type.STEPPE;
+
             default:
-                throw new ColorExeption("Wrong color");
-
+                throw new TypeException("You entered incorrect type.");
 
         }
 
+    }
 
+    private Color getColoring(String c) throws ColorExeption {
+
+        switch (c.toLowerCase()) {
+            case "yellow":
+                return Color.YELLOW;
+            case "white":
+                return Color.WHITE;
+            case "green":
+                return Color.GREEN;
+
+            default:
+                throw new ColorExeption("You entered incorrect color.");
+
+        }
     }
 
     @Override
