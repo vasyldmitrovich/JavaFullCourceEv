@@ -6,7 +6,7 @@ import java.util.regex.*;
 public class Solution {
     static Scanner scanner = new Scanner(System.in);
     private static int count;
-
+    /*Good*/
     public static void main(String[] args) {
         run();
     }

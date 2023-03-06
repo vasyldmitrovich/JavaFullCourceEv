@@ -5,7 +5,7 @@ import java.util.*;
 public class Application {
     private static final Map<String, String> personMap = new HashMap<>(10);
 
-
+    /*All good*/
     public static void main(String[] args) {
         run();
     }
