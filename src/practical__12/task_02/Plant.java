@@ -9,6 +9,9 @@ public class Plant {
     private Type type;
 
 
+    public Plant() {
+    }
+
     public Plant(int size, String color, String type) throws ColorExeption, TypeException {
         this.size = size;
         Color colorising = getColoring(color);
