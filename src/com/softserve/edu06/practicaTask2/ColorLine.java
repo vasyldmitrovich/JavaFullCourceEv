@@ -6,6 +6,7 @@ public class ColorLine extends Line {
         return color;
     }
 
+    /*Fields in class must be first, after that constructor get set and then everything else*/
     private String color;
 
     public ColorLine(int x, int y, String color) {

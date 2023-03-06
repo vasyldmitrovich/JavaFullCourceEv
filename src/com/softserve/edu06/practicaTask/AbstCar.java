@@ -1,5 +1,6 @@
 package com.softserve.edu06.practicaTask;
 
+/*rename class without word Abst, reed code convention for understanding */
 public abstract class AbstCar {
     private String model;
     private int maxSpeed;
