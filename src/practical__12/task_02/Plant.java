@@ -10,6 +10,8 @@ public class Plant {
 
 
     public Plant(int size, String color, String type) throws ColorExeption, TypeException {
+        /*The best decision here is using recursion
+        * please rewrite this constructor using recursion*/
         this.size = size;
         Color colorising = getColoring(color);
         Type typing = getTyping(type);
