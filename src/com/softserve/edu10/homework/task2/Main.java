@@ -6,7 +6,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Map<String, String> personMap = new HashMap<>(10);
-
+    /*Good*/
         fillMap(personMap);
         inputMap(personMap);
 

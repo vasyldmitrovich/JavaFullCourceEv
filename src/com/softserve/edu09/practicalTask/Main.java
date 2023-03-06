@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Integer> myCollection = new LinkedList<>();
-
+    /*All is ok*/
         ListExtra.fill(myCollection, 10);
         System.out.println("My collection: " + myCollection);
 
