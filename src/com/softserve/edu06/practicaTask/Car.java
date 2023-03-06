@@ -1,15 +1,15 @@
 package com.softserve.edu06.practicaTask;
 
 /*rename class without word Abst, reed code convention for understanding */
-public abstract class AbstCar {
+public abstract class Car {
     private String model;
     private int maxSpeed;
     private int yearOfManufacture;
 
-    public AbstCar(){
+    public Car(){
     }
 
-    public AbstCar(String model, int maxSpeed, int yearOfManufacture ){
+    public Car(String model, int maxSpeed, int yearOfManufacture ){
         this.model = model;
         this.maxSpeed = maxSpeed;
         this.yearOfManufacture = yearOfManufacture;
@@ -41,7 +41,7 @@ public abstract class AbstCar {
 
     @Override
     public String toString() {
-        return "AbstCar{" +
+        return "Car{" +
                 "model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", yearOfManufacture=" + yearOfManufacture +

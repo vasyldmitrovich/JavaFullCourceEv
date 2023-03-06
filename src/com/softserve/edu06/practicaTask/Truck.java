@@ -1,6 +1,6 @@
 package com.softserve.edu06.practicaTask;
 
-public class Truck extends AbstCar {
+public class Truck extends Car {
 
     public Truck(String model, int maxSpeed, int yearOfManufacture) {
         super(model, maxSpeed, yearOfManufacture);
