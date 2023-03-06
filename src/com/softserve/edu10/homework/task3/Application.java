@@ -43,6 +43,7 @@ public class Application {
 
     public static int getCourseFromUser() {
         Scanner scanner = new Scanner(System.in);
+        /*Nice decision*/
         int course = 0;
         while (course < 1) {
             try {
