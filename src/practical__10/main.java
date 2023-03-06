@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/*Class name start from lower case, this is not good, reed code convention and change class name from upper case*/
 public class main {
     public static void main(String[] args) {
 
@@ -42,6 +43,8 @@ public class main {
 
         //Task 2
 
+        /*Why you use the same code many times, you use Please enter ID: in each task, please create once method
+        * and use it in each tasks*/
         System.out.println("Please enter ID: ");
 
         int key = scan.nextInt();
