@@ -1,5 +1,6 @@
 package com.softserve.edu07.practicaTask;
 
+/*Please del 07 from name of class*/
 public class Dog07 implements Animal {
 
     public void voice() {
