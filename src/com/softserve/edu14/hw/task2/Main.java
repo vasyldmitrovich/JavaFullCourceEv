@@ -29,9 +29,13 @@ public class Main {
                 .map(Employee::getName)
                 .collect(Collectors.groupingBy(name -> name, Collectors.counting()));
 
-        // Find the most popular name
-        return nameCounts.entrySet().stream()
+        Optional<String> result = nameCounts.entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getKey);
+        if (result.isPresent()) {
+            return result;
+        } else {
+            return Optional.empty();
+        }
     }
 }
