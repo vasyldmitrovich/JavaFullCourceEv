@@ -6,6 +6,8 @@ public class Plant {
     private int size;
 
     public Plant(String type, String color, int size) throws ColorException, TypeException{
+        /*If color will not be correct, what then?
+        * Use in this constructor recursion, rewrite code using recursion*/
         Color c = colorStrToEnum(color);
         Type t = typeStrToEnum(type);
         this.size = size;

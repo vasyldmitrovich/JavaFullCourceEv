@@ -7,7 +7,7 @@ public class Task3 {
     public static void main(String[] args) {
         run();
     }
-
+    /*Good*/
     public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year: ");
