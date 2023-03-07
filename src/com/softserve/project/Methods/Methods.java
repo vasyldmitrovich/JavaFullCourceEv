@@ -276,6 +276,7 @@ public class Methods {
                             for (int k = 0; k < 3; k++) {
                                 if (GameTable.battleField[i][k] == ' ') {
                                     GameTable.battleField[i][k] = Move.O;
+                                    System.out.printf("AI made the move - row: %d, column: %d\n", i + 1, k + 1);
                                     Move.setIsMoveDone(true);
                                     break;
                                 }
@@ -294,6 +295,7 @@ public class Methods {
                             for (int k = 0; k < 3; k++) {
                                 if (GameTable.battleField[k][i] == ' ') {
                                     GameTable.battleField[k][i] = Move.O;
+                                    System.out.printf("AI made the move - row: %d, column: %d\n", k + 1, i + 1);
                                     Move.setIsMoveDone(true);
                                     break;
                                 }
@@ -309,6 +311,7 @@ public class Methods {
                         for (int j = 0; j < 3; j = j + 2) {
                             if (GameTable.battleField[j][i] == ' ') {
                                 GameTable.battleField[j][i] = Move.O;
+                                System.out.printf("AI made the move - row: %d, column: %d\n", j + 1, i + 1);
                                 Move.setIsMoveDone(true);
                                 break;
                             }
