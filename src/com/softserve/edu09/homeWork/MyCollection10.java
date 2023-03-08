@@ -30,7 +30,6 @@ public class MyCollection10 {
     }
 
     public static List insertRandomNumber(List list) {
-        //  int x = (int)(Math.random() * 100 - 100);
         int x = (int) (100 + Math.random() * 900);
         for (int i = 0; i < list.size(); i++) {
             if ((int) list.get(i) < 0) {
