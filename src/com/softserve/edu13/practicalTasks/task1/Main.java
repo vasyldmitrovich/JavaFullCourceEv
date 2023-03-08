@@ -15,9 +15,9 @@ public class Main {
 
     public static void outCurrentDay() {
         LocalDate currentDate = LocalDate.now();
-        int currentDay = currentDate.getDayOfMonth();
+        DayOfWeek currentDay = currentDate.getDayOfWeek();
 
-        System.out.println("\nToday's day: " + currentDay);
+        System.out.println("\nToday's day of week: " + currentDay);
     }
 
     public static void outFirstMondayOfMonth() {
