@@ -40,7 +40,7 @@ public class App {
                     Task3.run(30, 310);
                     break;
                 case 4:
-
+                    Task4.run();
                     break;
                 case 5:
 
@@ -52,7 +52,7 @@ public class App {
                     Task7.run(5);
                     break;
                 case 8:
-
+                    Task8.run();
                     break;
                 case 9:
                     Task9.run(10);
