@@ -37,7 +37,7 @@ public class App {
                     Task2.run(value);
                     break;
                 case 3:
-
+                    Task3.run(30, 310);
                     break;
                 case 4:
 
@@ -46,16 +46,16 @@ public class App {
 
                     break;
                 case 6:
-
+                    Task6.run("I love ice cream");
                     break;
                 case 7:
-
+                    Task7.run(5);
                     break;
                 case 8:
 
                     break;
                 case 9:
-
+                    Task9.run(10);
                     break;
                 case 10:
 
