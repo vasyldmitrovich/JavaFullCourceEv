@@ -32,7 +32,9 @@ public class App {
                 case 1:
                     break;
                 case 2:
-
+                    System.out.print("Enter a value:");
+                    int value = sc.nextInt();
+                    Task2.run(value);
                     break;
                 case 3:
 
