@@ -1,6 +1,7 @@
 package com.softserve.projectCitrus;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Fruit implements Serializable {
 
@@ -34,7 +35,6 @@ public class Fruit implements Serializable {
             System.out.println("Error reading from console!");
         }
     }
-
     public void print() {
         System.out.println("Name: " + name);
         System.out.println("Color: " + color);
@@ -44,6 +44,7 @@ public class Fruit implements Serializable {
         pw.println("Name: " + name);
         pw.println("Color: " + color);
     }
+
 
     @Override
     public String toString() {
