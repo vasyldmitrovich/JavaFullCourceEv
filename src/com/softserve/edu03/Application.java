@@ -2,7 +2,7 @@ package com.softserve.edu03;
 
 public class Application { // extends Object by default
 
-    private String name = "Ivan";
+    private String name = "Yurii";
 
     // Overload
     public void print() {
